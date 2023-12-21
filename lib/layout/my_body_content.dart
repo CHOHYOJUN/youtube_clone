@@ -5,7 +5,7 @@ class MyBodyContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(0.0),
-      child: Column(
+      child: ListView(
         children: [
           Card(
             child: Column(
@@ -33,7 +33,7 @@ class MyBodyContent extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 16.0), // 여백 추가
+          const SizedBox(height: 16.0), // 여백 추가
           Card(
             child: Column(
               children: [
@@ -48,10 +48,10 @@ class MyBodyContent extends StatelessWidget {
                   leading: const CircleAvatar(
                     backgroundImage: NetworkImage('https://example.com/second_avatar.jpg'), // 두 번째 카드의 아바타 이미지 URL
                   ),
-                  title: Text('두 번째 화면'), // 두 번째 카드의 제목
-                  subtitle: Text('두 번째 화면 설명'), // 두 번째 카드의 부제목
+                  title: const Text('두 번째 화면'), // 두 번째 카드의 제목
+                  subtitle: const Text('두 번째 화면 설명'), // 두 번째 카드의 부제목
                   trailing: IconButton(
-                    icon: Icon(Icons.more_vert),
+                    icon: const Icon(Icons.more_vert),
                     onPressed: () {
                       // 햄버거 버튼을 눌렀을 때 수행할 동작
                     },
