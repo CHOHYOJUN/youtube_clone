@@ -13,10 +13,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '유투브',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      darkTheme: ThemeData(
+          brightness: Brightness.dark,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+              style: ButtonStyle(
+            backgroundColor:
+                MaterialStateProperty.resolveWith((states) => Colors.indigo),
+          ))),
+      themeMode: ThemeMode.dark,
       home: const MainScreen(),
     );
   }
