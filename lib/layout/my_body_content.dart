@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class MyBodyContent extends StatelessWidget {
   const MyBodyContent({Key? key});
-
   @override
   Widget build(BuildContext context) {
     return Padding(
