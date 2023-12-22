@@ -20,7 +20,7 @@ class MyBodyContent extends StatelessWidget {
                 ),
                 ListTile(
                   leading: const CircleAvatar(
-                    backgroundImage: NetworkImage('https://example.com/avatar.jpg'),
+                    backgroundImage: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Brad_Pitt_2012.jpg/220px-Brad_Pitt_2012.jpg'),
                   ),
                   title: const Text('개발자 양성 전문가'),
                   subtitle: const Text('과제가 남았다'),
@@ -53,7 +53,7 @@ class MyBodyContent extends StatelessWidget {
                 ),
                 ListTile(
                   leading: const CircleAvatar(
-                    backgroundImage: NetworkImage('https://example.com/second_avatar.jpg'), // 두 번째 카드의 아바타 이미지 URL
+                    backgroundImage: NetworkImage('https://image.newdaily.co.kr/site/data/img/2022/06/20/2022062000159_0.jpg'), // 두 번째 카드의 아바타 이미지 URL
                   ),
                   title: const Text('두 번째 화면'), // 두 번째 카드의 제목
                   subtitle: const Text('두 번째 화면 설명'), // 두 번째 카드의 부제목
