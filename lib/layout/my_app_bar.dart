@@ -40,9 +40,28 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // toolbarHeight: 0,
-        title: const Text('YouTube'),
+        title: Row(
+          children: <Widget>[
+            // Expanded(
+              Image.asset('lib/assets/youtube.png', width: 150,), // 이미지 파일 경로와 이름 설정
+            // ),
+          ],
+        ),
         centerTitle: false,
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.abc_outlined),
+            onPressed: () {
+              // 버튼이 눌렸을 때 수행할 동작을 여기에 작성하세요.
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.abc_sharp),
+            onPressed: () {
+              // 버튼이 눌렸을 때 수행할 동작을 여기에 작성하세요.
+            },
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

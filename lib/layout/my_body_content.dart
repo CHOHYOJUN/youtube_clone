@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class MyBodyContent extends StatelessWidget {
+  const MyBodyContent({Key? key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,13 +23,19 @@ class MyBodyContent extends StatelessWidget {
                   leading: const CircleAvatar(
                     backgroundImage: NetworkImage('https://example.com/avatar.jpg'),
                   ),
-                  title: Text('개발자 양성 전문가'),
-                  subtitle: Text('과제가 남았다'),
-                  trailing: IconButton(
-                    icon: Icon(Icons.more_vert),
-                    onPressed: () {
-                      // 햄버거 버튼을 눌렀을 때 수행할 동작
-                    },
+                  title: const Text('개발자 양성 전문가'),
+                  subtitle: const Text('과제가 남았다'),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const SizedBox(width: 8.0),
+                      IconButton(
+                        icon: const Icon(Icons.more_vert),
+                        onPressed: () {
+                          //
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -50,11 +58,17 @@ class MyBodyContent extends StatelessWidget {
                   ),
                   title: const Text('두 번째 화면'), // 두 번째 카드의 제목
                   subtitle: const Text('두 번째 화면 설명'), // 두 번째 카드의 부제목
-                  trailing: IconButton(
-                    icon: const Icon(Icons.more_vert),
-                    onPressed: () {
-                      // 햄버거 버튼을 눌렀을 때 수행할 동작
-                    },
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const SizedBox(width: 8.0),
+                      IconButton(
+                        icon: const Icon(Icons.more_vert),
+                        onPressed: () {
+                          // 햄버거 버튼을 눌렀을 때 수행할 동작
+                        },
+                      ),
+                    ],
                   ),
                 ),
               ],
